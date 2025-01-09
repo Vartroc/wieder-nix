@@ -1,4 +1,5 @@
-Hello, I'm quite surprised you made it here. Well, this repo is just for my personal config and you can do whatever you want with it (see Unlicense).
+Hello, I'm quite surprised you made it here. Well, this repo is just for my personal config. License is GPLv3. 
+P.S. If you find a bug, it’s probably not my fault... unless it is.
 
 ## File Structure:
 ```tree
@@ -53,7 +54,7 @@ Hello, I'm quite surprised you made it here. Well, this repo is just for my pers
 
 
 
-Issue Tracker:
+### Issue Tracker:
     - cross dependencies between /nix/niri.nix and /hm/niri.nix
     - git automatic pushing and verification
     - config required for:

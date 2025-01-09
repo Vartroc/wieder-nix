@@ -1,0 +1,19 @@
+{
+imports = [
+  ./browser.nix
+  ./greetd.nix
+  ./misc.nix
+  ./gaming.nix
+  ./git.nix
+  ./zfs.nix
+  ./boot.nix
+  ./niri.nix
+  ./sound.nix
+  ./users.nix
+  ./terminal.nix
+  ./socialize.nix
+  ./no-shutdown.nix
+  ./localization.nix
+  ./nixvim/nixvim.nix
+];
+}

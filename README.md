@@ -56,7 +56,6 @@ P.S. If you find a bug, it’s probably not my fault... unless it is.
 
 ### Issue Tracker:
     - cross dependencies between /nix/niri.nix and /hm/niri.nix
-    - git automatic pushing and verification
     - config required for:
         - fuzzel
         - kitty

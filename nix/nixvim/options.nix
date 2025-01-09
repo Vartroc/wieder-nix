@@ -1,17 +1,17 @@
 { config, ... }:
 {
-programs.nixvim = {
+  programs.nixvim = {
     opts = {
-	number = true;
-	shiftwidth = 2;
-	relativenumber = true;
-	termguicolors = true;
+      number = true;
+      shiftwidth = 2;
+      relativenumber = true;
+      termguicolors = true;
     };
-    
+
     clipboard = {
-	register = "unnamedplus";
-	providers.wl-copy.enable = true;
+      register = "unnamedplus";
+      providers.wl-copy.enable = true;
     };
     globals.mapleader = " ";
-};
+  };
 }

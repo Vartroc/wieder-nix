@@ -1,17 +1,17 @@
 { pkgs, ... }:
 {
-programs.nixvim = {
+  programs.nixvim = {
     plugins.vimtex = {
-	enable = true;
-	texlivePackage = pkgs.texliveFull;
-	settings = {
-	  view_method = "zathura";
-	  compiler_method = "latexmk";
-	};
+      enable = true;
+      texlivePackage = pkgs.texliveFull;
+      settings = {
+        view_method = "zathura";
+        compiler_method = "latexmk";
+      };
     };
-};
-environment.systemPackages = with pkgs; [
+  };
+  environment.systemPackages = with pkgs; [
     zathura
     biber
-];
+  ];
 }

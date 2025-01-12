@@ -4,13 +4,12 @@
 
 <div align="center">
 
-![Logo](./logo.png)
+![Logo](./logo.jpeg)
 
 ![License](https://img.shields.io/badge/License-GPLv3-blue.svg)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)
 </div>
 Hello, I'm quite surprised you made it here. Well, this repo is just for my personal config. License is GPLv3. 
----
 
 ## Goals:
 ### Minimalstic mindset:
@@ -22,7 +21,6 @@ Hello, I'm quite surprised you made it here. Well, this repo is just for my pers
 - every enable option is found in configuration.nix
 --> easily make new configurations without a hassle
 
-P.S. If you find a bug, it’s probably not my fault... unless it is.
 ## File Structure:
 FIXME: add files and descriptions
 ```tree

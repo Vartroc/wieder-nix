@@ -1,5 +1,5 @@
 <div align="center">
-# wieder-nix
+**wieder-nix**
 
 ![Logo](./logo.png)
 

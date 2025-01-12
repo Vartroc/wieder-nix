@@ -10,7 +10,6 @@
       enable = false;
       command = "niri-session";
     };
-    git.enable = true;
     browser.enable = true;
     misc.enable = true;
     zfs.enable = true;

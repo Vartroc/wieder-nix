@@ -4,7 +4,6 @@
     ./greetd.nix
     ./misc.nix
     ./gaming.nix
-    ./git.nix
     ./zfs.nix
     ./boot.nix
     ./niri.nix

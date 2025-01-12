@@ -4,5 +4,6 @@
     ./kitty.nix
     ./fuzzel.nix
     ./git.nix
+    ./yazi.nix
   ];
 }

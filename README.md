@@ -1,7 +1,17 @@
 Hello, I'm quite surprised you made it here. Well, this repo is just for my personal config. License is GPLv3. 
-P.S. If you find a bug, it’s probably not my fault... unless it is.
+## Goals:
+### Minimalstic mindset:
+- only the stuff that I need
+- no waybar, no fancy flexing command line tools like cmatirx, 
+- just the stuff that I need: gaming, socialization (Vesktop, Signal), useful cli tools (tree, bat)
+### Modularization:
+- almost every feature has an easy enable option
+- every enable option is found in configuration.nix
+--> easily make new configurations without a hassle
 
+P.S. If you find a bug, it’s probably not my fault... unless it is.
 ## File Structure:
+FIXME: add files and descriptions
 ```tree
 .
 ├── flake.lock

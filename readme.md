@@ -1,11 +1,14 @@
+<div align="center">
 # wieder-nix
 
 ![Logo](./logo.png)
 
 ![License](https://img.shields.io/badge/License-GPLv3-blue.svg)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)
-
+</div>
 Hello, I'm quite surprised you made it here. Well, this repo is just for my personal config. License is GPLv3. 
+---
+
 ## Goals:
 ### Minimalstic mindset:
 - only the stuff that I need

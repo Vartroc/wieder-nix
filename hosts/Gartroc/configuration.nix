@@ -2,6 +2,7 @@
 {
   imports = [
     ../../nix/default.nix
+    ../../assets/text/scripts/default.nix
     ./hardware-configuration.nix
   ];
   custom = {

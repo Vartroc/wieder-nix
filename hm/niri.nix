@@ -132,7 +132,7 @@ in
 
             # --- coll binds ---
             "${Mod}+P".action =
-              sh ''cat ~/wieder-nix/hm/files/text-emojis.txt | fuzzel --dmenu | column -t -s "⇒" -N "EMOJI","DESCRIPTION" -H "DESCRIPTION" | tail +2 | wl-copy -n'';
+              sh ''cat ${config.home.homeDirectory}/wieder-nix/assets/text/text-emojis.txt | fuzzel --dmenu | column -t -s "⇒" -N "EMOJI","DESCRIPTION" -H "DESCRIPTION" | tail +2 | wl-copy -n'';
 
             # --- debugging ---
             "${Mod}+Shift+J".action = quit;

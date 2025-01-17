@@ -18,7 +18,5 @@
     ./localization.nix
     ./nixvim/nixvim.nix
     #./treefmt.nix
-
-    ./scripts/default.nix
   ];
 }

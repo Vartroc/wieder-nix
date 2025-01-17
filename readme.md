@@ -4,7 +4,7 @@
 
 <div align="center">
 
-![Logo](./logo.jpeg)
+![Logo](.assets/images/logo.jpeg)
 
 ![License](https://img.shields.io/badge/License-GPLv3-blue.svg)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)

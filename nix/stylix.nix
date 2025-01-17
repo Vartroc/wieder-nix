@@ -6,7 +6,7 @@ config = lib.mkIf config.custom.stylix.enable {
   enable = true;
 
   base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-macchiato.yaml"; 
-  image = ../hm/files/wallpapers/current.png;
+  image = ../assets/images/wallpapers/current.png;
 
   cursor = {
     package = pkgs.volantes-cursors;

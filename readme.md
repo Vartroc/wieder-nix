@@ -31,12 +31,7 @@ Hello, I'm quite surprised you made it here. Well, this repo is just for my pers
 │   --- Home-Manager-specific configurations, distinct from NixOS system-level files.
 │   ├── default.nix --- Imports all files in the `hm` directory.
 │   │   ...
-── hosts  
-│   --- Host-specific configurations, each containing:  
-│   ├── configuration.nix           --- NixOS system configuration.
-│   ├── hardware-configuration.nix  --- Auto-generated hardware settings for the host.
-│   └── home.nix                    --- Home-Manager configuration specific to the host.  
-├── nix  
+── nix  
 │   --- Contains system-wide NixOS configurations, not related to Home-Manager:
 │   ├── default.nix                 --- Imports all files in this directory.  
 │   ├── nixvim                      --- Nixvim configuration. Planning to switch to kickstart.nixvim for a cleaner setup.  
@@ -53,8 +48,12 @@ Hello, I'm quite surprised you made it here. Well, this repo is just for my pers
 │       │   ├── test1.nix
 │       │   └── test.nix
 │       └── text-emojis.txt         --- Emoji file for a "custom" emoji picker
-
-
+── hosts  
+│   --- Host-specific configurations, each containing:  
+│   ├── configuration.nix           --- NixOS system configuration.
+│   ├── hardware-configuration.nix  --- Auto-generated hardware settings for the host.
+│   └── home.nix                    --- Home-Manager configuration specific to the host.  
+│
 └── README.md   --- You're looking at it!  
 
 ```
@@ -67,3 +66,4 @@ Hello, I'm quite surprised you made it here. Well, this repo is just for my pers
         - fuzzel
         - kitty
     - notification deamon with e.g. time shortcut
+    - disko config

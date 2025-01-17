@@ -6,26 +6,32 @@
     ./hardware-configuration.nix
   ];
   custom = {
+    # --- Essentials ---
     autologinUser.enable = true;
     greetd = {
       enable = true;
       command = "niri-session";
     };
-    scripts.enable = true;
-    stylix.enable = true;
-    browser.enable = true;
     misc.enable = true;
     zfs.enable = true;
-    gaming.enable = true;
     sound.enable = true;
+    localization.enable = true;
     andi.enable = true;
+
+    # --- Userspace ---
     niri.enable = true;
-    no-shutdown.enable = true;
+    stylix.enable = true;
+    gaming.enable = true;
+    browser.enable = true;
     socialize.enable = true;
     ghostty.enable = true;
-    localization.enable = true;
+
+    # --- Misc ---
+    scripts.enable = true;
+    no-shutdown.enable = true;
   };
 
+  # --- Home-manager ---
   home-manager = {
     backupFileExtension = "bak"; 
     users = {
@@ -33,11 +39,11 @@
     };
   };
 
-
+  # --- Host-specific networking ---
   networking = {
     hostName = "Gartroc";
   };
 
 
-  system.stateVersion = "24.05";
+
 }

@@ -4,7 +4,7 @@
 
 <div align="center">
 
-![Logo](.assets/images/logo.jpeg)
+![Logo](./assets/images/logo.jpeg)
 
 ![License](https://img.shields.io/badge/License-GPLv3-blue.svg)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)
@@ -22,7 +22,6 @@ Hello, I'm quite surprised you made it here. Well, this repo is just for my pers
 --> easily make new configurations without a hassle
 
 ## File Structure:
-FIXME: add files and descriptions
 ```tree
 .
 ├── flake.lock
@@ -31,44 +30,31 @@ FIXME: add files and descriptions
 ├── hm  
 │   --- Home-Manager-specific configurations, distinct from NixOS system-level files.
 │   ├── default.nix --- Imports all files in the `hm` directory.
-│   ├── fuzzel.nix  --- Home-manager configuration for Fuzzel.
-│   ├── kitty.nix   --- Home-manager configuration for Kitty.  
-│   └── niri.nix    --- Home-manager configuration for the Niri compositor.  
-├── hosts  
+│   │   ...
+── hosts  
 │   --- Host-specific configurations, each containing:  
 │   ├── configuration.nix           --- NixOS system configuration.
 │   ├── hardware-configuration.nix  --- Auto-generated hardware settings for the host.
 │   └── home.nix                    --- Home-Manager configuration specific to the host.  
 ├── nix  
 │   --- Contains system-wide NixOS configurations, not related to Home-Manager:
-│   ├── boot.nix        --- bootloader (e.g., GRUB).  
-│   ├── browser.nix     --- Installs Firefox-based browsers. Suggestions welcome!  
-│   ├── default.nix     --- Imports all files in this directory.  
-│   ├── gaming.nix      --- Gaming configurations for Steam, Lutris, etc. Inspired by Vimjoyer.  
-│   ├── git.nix         --- Git-specific settings.  
-│   ├── greetd.nix      --- Sets up auto-login and auto-launch for the compositor.  
-│   ├── localization.nix--- Timezone, keyboard layout, and localization settings.  
-│   ├── misc.nix        --- Miscellaneous options like enabling flakes and unfree software.  
-│   ├── niri.nix        --- Configuration for the Niri compositor.  
-│   ├── nixvim          --- Nixvim configuration. Planning to switch to kickstart.nixvim for a cleaner setup.  
-│   │   ├── keybinds.nix  
-│   │   ├── nixvim.nix   
-│   │   ├── options.nix  
-│   │   └── plugins      --- Plugin configurations for Neovim. Includes:  
-│   │       ├── cmp.nix  
-│   │       ├── cmp-nvim.nix  
-│   │       ├── default.nix  
-│   │       ├── lsp.nix  
-│   │       ├── luasnip.nix  
-│   │       ├── telekasten.nix  
-│   │       ├── telescope.nix  
-│   │       └── vimtex.nix  
-│   ├── no-shutdown.nix --- Disables the shutdown button (a safeguard).  
-│   ├── socialize.nix   --- Installs apps for communication, e.g., Signal or Vesktop.  
-│   ├── sound.nix       --- Audio settings.  
-│   ├── terminal.nix    --- Terminal configuration and related utilities (e.g., `tree`).  
-│   ├── users.nix       --- User account configurations (currently only `andi`).  
-│   └── zfs.nix         --- ZFS-specific configurations (e.g., GRUB setup).  
+│   ├── default.nix                 --- Imports all files in this directory.  
+│   ├── nixvim                      --- Nixvim configuration. Planning to switch to kickstart.nixvim for a cleaner setup.  
+│   │   └── ... 
+│   └──...
+├── assets                          --- Directory containing non .nix files
+│   ├── images                      --- Images (e.g. .png, .jpeg, .pdf)
+│   │   ├── ...
+│   │   └── wallpapers              --- Collection of my wallpapers
+│   │       └── ...
+│   └── text                        --- Textfiles lol
+│       ├── scripts                 --- universal scripts using writeShellApplication
+│       │   ├── default.nix
+│       │   ├── test1.nix
+│       │   └── test.nix
+│       └── text-emojis.txt         --- Emoji file for a "custom" emoji picker
+
+
 └── README.md   --- You're looking at it!  
 
 ```
@@ -81,5 +67,3 @@ FIXME: add files and descriptions
         - fuzzel
         - kitty
     - notification deamon with e.g. time shortcut
-    - set stylix up
-    - shutdown keybind

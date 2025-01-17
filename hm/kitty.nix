@@ -8,8 +8,9 @@
   options.custom.kitty.enable = lib.mkEnableOption "my custom config for the kitty terminal";
   config = lib.mkIf config.custom.kitty.enable {
 
-    home.packages = with pkgs; [ kitty ];
+#    home.packages = with pkgs; [ kitty ];
     programs.kitty = {
+      enable = true;
       themeFile = "Catppuccin-Mocha";
       settings = {
         window_border_width = "0px";

@@ -5,5 +5,6 @@
     ./fuzzel.nix
     ./git.nix
     ./yazi.nix
+    ./image.nix
   ];
 }

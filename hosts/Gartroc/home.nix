@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ ... }:
 
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -7,6 +7,9 @@
   home.homeDirectory = "/home/andi";
 
   custom = {
+    image.enable = true;
+    git.enable = true;
+    yazi.enable = true;
     fuzzel.enable = true;
     niri.enable = true;
     kitty.enable = true;

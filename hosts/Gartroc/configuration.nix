@@ -5,10 +5,10 @@
     ./hardware-configuration.nix
   ];
   custom = {
-    autologinUser.enable = true;
+#    autologinUser.enable = true;
     greetd = {
-      enable = false;
-      command = "niri-session";
+      enable = true;
+      command = "wait 1 | niri-session";
     };
     browser.enable = true;
     misc.enable = true;
@@ -24,6 +24,7 @@
   };
 
   home-manager = {
+    backupFileExtension = "bak"; 
     users = {
       "andi" = import ./home.nix;
     };

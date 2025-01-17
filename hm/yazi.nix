@@ -1,5 +1,9 @@
-{ pkgs, ... }:
+{ lib, config, pkgs, ... }:
 {
+options.custom.yazi.enable = lib.mkEnableOption "custom config for yazi file manager";
+  config = lib.mkIf config.custom.yazi.enable {
+
+
 home.packages = with pkgs; [
   yazi
 ];
@@ -19,5 +23,5 @@ home.file.".local/share/applications/yazi.desktop".text = ''
     MimeType=inode/directory;
   '';
 
-
+};
 }

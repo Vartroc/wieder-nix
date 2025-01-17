@@ -1,6 +1,8 @@
 {
   imports = [
     ./browser.nix
+    ./printing.nix
+    ./networking.nix
     ./greetd.nix
     ./misc.nix
     ./gaming.nix
@@ -15,5 +17,7 @@
     ./localization.nix
     ./nixvim/nixvim.nix
     #./treefmt.nix
+
+    ./scripts/default.nix
   ];
 }

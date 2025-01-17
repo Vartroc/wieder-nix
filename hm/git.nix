@@ -1,5 +1,7 @@
-{ ... }:
+{ lib, config, ... }:
 {
+options.custom.git.enable = lib.mkEnableOption "custom git config";
+  config = lib.mkIf config.custom.git.enable {
   programs.git = {
     enable = true;
     userName = "Andreas";
@@ -7,5 +9,6 @@
     extraConfig = {
       init.defaultBranch = "main";
     };
+  };
   };
 }

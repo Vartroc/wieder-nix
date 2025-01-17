@@ -1,4 +1,4 @@
-{ config, lib, ... }:
+{ config, lib, pkgs, ... }:
 
 {
   options.custom = {
@@ -20,7 +20,7 @@
         enable = true;
         settings = rec {
           initial_session = {
-            command = "${config.custom.greetd.command}";
+            command = "${pkgs.greetd.greetd}/bin/agreety --cmd ${config.custom.greetd.command}";
             user = "andi";
           };
           default_session = initial_session;

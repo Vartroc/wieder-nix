@@ -5,11 +5,12 @@
     ./hardware-configuration.nix
   ];
   custom = {
-#    autologinUser.enable = true;
+    autologinUser.enable = true;
     greetd = {
       enable = true;
-      command = "wait 1 | niri-session";
+      command = "niri-session";
     };
+    scripts.enable = true;
     browser.enable = true;
     misc.enable = true;
     zfs.enable = true;
@@ -29,6 +30,12 @@
       "andi" = import ./home.nix;
     };
   };
+
+
+  networking = {
+    hostName = "Gartroc";
+  };
+
 
   system.stateVersion = "24.05";
 }

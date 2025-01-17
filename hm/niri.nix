@@ -41,7 +41,7 @@ in
         cursor = {
           hide-after-inactive-ms = 1000;
           hide-when-typing = true;
-          size = 12;
+          #size = 12;
         };
 
         layout = {

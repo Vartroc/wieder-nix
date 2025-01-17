@@ -1,12 +1,11 @@
-{ lib, config, pkgs, ... }:
+{ lib, config, ... }:
 {
 options.custom.yazi.enable = lib.mkEnableOption "custom config for yazi file manager";
   config = lib.mkIf config.custom.yazi.enable {
 
-
-home.packages = with pkgs; [
-  yazi
-];
+programs.yazi = {
+  enable = true;
+};
 
 xdg.mimeApps = {
   enable = true;

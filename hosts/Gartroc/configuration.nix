@@ -11,6 +11,7 @@
       command = "niri-session";
     };
     scripts.enable = true;
+    stylix.enable = true;
     browser.enable = true;
     misc.enable = true;
     zfs.enable = true;

@@ -24,18 +24,31 @@
     (lib.mkIf config.custom.autostart.enable {
       services.greetd = {
         enable = true;
-        settings = {
+        /*settings = {
           default_session = {
-            command = "${lib.getExe pkgs.greetd.tuigreet} --time --remember --cmd '${inputs.niri.packages.x86_64-linux.niri-stable}/bin/niri-session'";
+            command = "${lib.getExe pkgs.greetd.tuigreet} --time --remember --cmd '${config.programs.niri.package}/bin/niri-session'";
             user = "greeter";
           };
 
           initial_session = {
-            command = "${pkgs.niri-stable}/bin/niri-session";
+            command = "${config.programs.niri.package}/bin/niri-session";
             user = "andi";
           };
-        };
+        };*/
+	settings = {
+          default_session = {
+            command = "${lib.getExe pkgs.greetd.tuigreet} --time --remember --cmd '${pkgs.hyprland}/bin/Hyprland'";
+            user = "greeter";
+          };
+
+          initial_session = {
+            command = "${pkgs.hyprland}/bin/Hyprland";
+            user = "andi";
+          };
+        }; 
+
       };
+      programs.hyprland.enable = true;
     })
 
     (lib.mkIf config.custom.autologin.enable {

@@ -10,6 +10,7 @@
   config = lib.mkIf config.custom.niri.enable {
     programs.niri = {
       enable = true;
+      package = pkgs.niri-stable;
     };
     programs.xwayland.enable = true;
     security.polkit.enable = true;

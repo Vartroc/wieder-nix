@@ -13,6 +13,7 @@
     fuzzel.enable = true;
     niri.enable = true;
     kitty.enable = true;
+    wallpaper.enable = true;
   };
 
   imports = [ ../../hm/default.nix ];

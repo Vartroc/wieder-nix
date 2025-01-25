@@ -41,5 +41,7 @@
     # hardware.opengl has beed changed to hardware.graphics
 
     services.xserver.videoDrivers = [ "amdgpu" ];
+    hardware.enableAllFirmware = true;
+    boot.kernelParams = [ "amdgpu.dmp=1" ];
   };
 }

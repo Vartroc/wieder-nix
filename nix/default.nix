@@ -1,10 +1,12 @@
 {
   imports = [
     ./stylix.nix
+    ./greetd.nix
+    ./plymouth.nix
     ./browser.nix
     ./printing.nix
     ./networking.nix
-    ./greetd.nix
+#    ./greetd.nix
     ./misc.nix
     ./gaming.nix
     ./zfs.nix

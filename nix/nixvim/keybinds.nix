@@ -47,7 +47,7 @@
       options.noremap = true;
     }
     {
-      action = "l";
+      action = "s";
       key = "ß";
       options.noremap = true;
     }

@@ -67,7 +67,7 @@ in
           gaps = 0;
 
           # --- ---
-          #center-focused-column = "on-overflow";
+          center-focused-column = "on-overflow";
           default-column-width.proportion = 0.5;
 
           preset-window-heights = [

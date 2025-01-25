@@ -2,6 +2,7 @@
   lib,
   config,
   pkgs,
+  inputs,
   ...
 }:
 {
@@ -12,13 +13,14 @@
     };
     programs.xwayland.enable = true;
     security.polkit.enable = true;
+    
+    nixpkgs.overlays = [ inputs.niri.overlays.niri ];
 
     environment.systemPackages = with pkgs; [
       xwayland-satellite
       wl-clipboard
       alsa-utils
       xdg-desktop-portal-gtk
-      alacritty
     ];
 
   };

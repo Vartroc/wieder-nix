@@ -7,11 +7,13 @@
   ];
   custom = {
     # --- Essentials ---
-/*    autologinUser.enable = true;
-    greetd = {
-      enable = true;
-      command = "niri-session";
-    };*/
+    /*
+      autologinUser.enable = true;
+       greetd = {
+         enable = true;
+         command = "niri-session";
+       };
+    */
     misc.enable = true;
     zfs.enable = true;
     sound.enable = true;
@@ -39,7 +41,7 @@
 
   # --- Home-manager ---
   home-manager = {
-    backupFileExtension = "bak"; 
+    backupFileExtension = "bak";
     users = {
       "andi" = import ./home.nix;
     };
@@ -49,7 +51,5 @@
   networking = {
     hostName = "Gartroc";
   };
-
-
 
 }

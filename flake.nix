@@ -36,8 +36,8 @@
           }
           inputs.nixvim.nixosModules.nixvim
           inputs.niri.nixosModules.niri
-#	  inputs.niri.homeModules.niri
-	  inputs.stylix.nixosModules.stylix
+          #	  inputs.niri.homeModules.niri
+          inputs.stylix.nixosModules.stylix
         ];
       };
     };

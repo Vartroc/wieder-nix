@@ -11,17 +11,17 @@
   config = lib.mkIf config.custom.ghostty.enable {
     environment = {
       sessionVariables = {
-	FLAKE = "/home/andi/wieder-nix";
+        FLAKE = "/home/andi/wieder-nix";
       };
       systemPackages = [
-	inputs.ghostty.packages.x86_64-linux.default
-	pkgs.wev
-	pkgs.nh
-	pkgs.ripgrep
-	pkgs.tree
-	pkgs.bat
-	pkgs.fzf
-	pkgs.nixfmt-rfc-style
+        inputs.ghostty.packages.x86_64-linux.default
+        pkgs.wev
+        pkgs.nh
+        pkgs.ripgrep
+        pkgs.tree
+        pkgs.bat
+        pkgs.fzf
+        pkgs.nixfmt-rfc-style
       ];
     };
   };

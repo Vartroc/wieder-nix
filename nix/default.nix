@@ -6,7 +6,6 @@
     ./browser.nix
     ./printing.nix
     ./networking.nix
-#    ./greetd.nix
     ./misc.nix
     ./gaming.nix
     ./zfs.nix

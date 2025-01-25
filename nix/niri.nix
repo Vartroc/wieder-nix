@@ -13,7 +13,7 @@
     };
     programs.xwayland.enable = true;
     security.polkit.enable = true;
-    
+
     nixpkgs.overlays = [ inputs.niri.overlays.niri ];
 
     environment.systemPackages = with pkgs; [

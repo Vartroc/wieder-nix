@@ -12,7 +12,8 @@
       enable = true;
 
       base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-macchiato.yaml";
-      image = ../assets/images/wallpapers/willow-and-sundew.jpg;
+      image = ../assets/images/wallpapers/solo-leveling-igris-edited.png;
+      polarity = "dark";
 
       cursor = {
         package = pkgs.volantes-cursors;

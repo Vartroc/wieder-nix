@@ -55,8 +55,8 @@ in
           border = {
             enable = true;
             width = 2;
-            active.color = "rgb(203, 166, 247)";
-            inactive.color = "rgb(24, 24, 37)";
+            active.color = "rgb(198, 160, 246)";
+            inactive.color = "rgb(30, 32, 48)";
           };
           struts = {
             bottom = 0;
@@ -89,6 +89,19 @@ in
         screenshot-path = "~/pictures/scrennshots/%Y-%m-%dT%H:%M:%S.png";
         prefer-no-csd = true;
 
+	
+	# --- window-rules ---
+	window-rules = [
+	  {
+	    matches = [{app-id = "kitty";}];
+	    opacity = 0.95;
+	    draw-border-with-background = false;
+
+	  }
+	];
+	   
+	
+
         binds =
           with config.lib.niri.actions;
           let
@@ -96,8 +109,8 @@ in
           in
           {
             # --- Actions to do on the upper left home-row ---
-            "${Mod}+H".action.spawn = "fuzzel";
-            "${Mod}+L".action.spawn = "kitty";
+            "${Mod}+H".action.spawn = "${config.programs.fuzzel.package}/bin/fuzzel";
+            "${Mod}+L".action.spawn = "${config.programs.kitty.package}/bin/kitty";
             "${Mod}+M".action.spawn = "firefox";
             "${Mod}+W".action = screenshot-window;
             "${Mod}+${Mod1}+W".action = screenshot-screen;

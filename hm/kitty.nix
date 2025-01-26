@@ -11,6 +11,7 @@
     #    home.packages = with pkgs; [ kitty ];
     programs.kitty = {
       enable = true;
+      package = pkgs.kitty;
       themeFile = "Catppuccin-Mocha";
       settings = {
         window_border_width = "0px";

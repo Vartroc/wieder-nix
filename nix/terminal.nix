@@ -6,15 +6,14 @@
   ...
 }:
 {
-  options.custom.ghostty.enable = lib.mkEnableOption "the ghostty terminal emulator";
+  options.custom.terminal.enable = lib.mkEnableOption "terminal utilities";
 
-  config = lib.mkIf config.custom.ghostty.enable {
+  config = lib.mkIf config.custom.terminal.enable {
     environment = {
       sessionVariables = {
         FLAKE = "/home/andi/wieder-nix";
       };
       systemPackages = [
-        inputs.ghostty.packages.x86_64-linux.default
         pkgs.wev
         pkgs.nh
         pkgs.ripgrep

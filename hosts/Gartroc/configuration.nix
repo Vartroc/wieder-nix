@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, ... }:
 {
   imports = [
     ../../nix/default.nix
@@ -7,13 +7,6 @@
   ];
   custom = {
     # --- Essentials ---
-    /*
-      autologinUser.enable = true;
-       greetd = {
-         enable = true;
-         command = "niri-session";
-       };
-    */
     misc.enable = true;
     zfs.enable = true;
     sound.enable = true;
@@ -22,13 +15,17 @@
 
     # --- Userspace ---
     niri.enable = true;
-    autostart.enable = true;
+    autostart = {
+      enable = true;
+      command = "${config.programs.niri.package}";
+    };
     stylix.enable = true;
     plymouth.enable = false;
     gaming.enable = true;
     browser.enable = true;
     socialize.enable = true;
-    ghostty.enable = true;
+    editing.enable = true;
+    terminal.enable = true;
 
     # --- Misc ---
     scripts.enable = true;

@@ -1,6 +1,7 @@
 {
   imports = [
     ./stylix.nix
+    ./editing.nix
     ./greetd.nix
     ./plymouth.nix
     ./browser.nix

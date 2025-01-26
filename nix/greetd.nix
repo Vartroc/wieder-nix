@@ -9,6 +9,11 @@
   options.custom = {
     autostart = {
       enable = lib.mkEnableOption "greetd";
+      
+      command = lib.mkOption {
+			type = lib.types.str;
+			default = "${config.programs.niri.package}";
+		};
     };
   };
 
@@ -18,12 +23,12 @@
 
       settings = {
         default_session = {
-          command = "${lib.getExe pkgs.greetd.tuigreet} --time --remember --cmd '${config.programs.niri.package}/bin/niri-session'";
+          command = "${lib.getExe pkgs.greetd.tuigreet} --time --remember --cmd '${config.custom.autostart.command}/bin/niri-session'";
           user = "greeter";
         };
 
         initial_session = {
-          command = "${config.programs.niri.package}/bin/niri-session";
+          command = "${config.custom.autostart.command}/bin/niri-session";
           user = "andi";
         };
       };

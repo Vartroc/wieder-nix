@@ -22,11 +22,7 @@
 
     # --- Userspace ---
     niri.enable = true;
-    autologin.enable = false;
-    autostart = {
-      enable = true;
-      command = "${pkgs.niri-stable}/bin/niri-session";
-    };
+    autostart.enable = true;
     stylix.enable = true;
     plymouth.enable = false;
     gaming.enable = true;

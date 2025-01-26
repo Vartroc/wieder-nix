@@ -36,11 +36,11 @@
 
     hardware = {
       graphics = {
-	enable = true;
-	enable32Bit = true;
+        enable = true;
+        enable32Bit = true;
       };
       amdgpu = {
-	initrd.enable = true;
+        initrd.enable = true;
       };
     };
     # hardware.opengl has beed changed to hardware.graphics

@@ -34,14 +34,19 @@
 
     # heavy "inspiration" from https://www.youtube.com/watch?v=qlfm3MEbqYA
 
-    hardware.graphics = {
-      enable = true;
-      enable32Bit = true;
+    hardware = {
+      graphics = {
+	enable = true;
+	enable32Bit = true;
+      };
+      amdgpu = {
+	initrd.enable = true;
+      };
     };
     # hardware.opengl has beed changed to hardware.graphics
 
     services.xserver.videoDrivers = [ "amdgpu" ];
     hardware.enableAllFirmware = true;
-    boot.kernelParams = [ "amdgpu.dmp=1" ];
+    #boot.kernelParams = [ "amdgpu.dpm=1" ];
   };
 }

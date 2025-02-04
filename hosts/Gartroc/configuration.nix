@@ -21,7 +21,10 @@
     };
     stylix.enable = true;
     plymouth.enable = false;
-    gaming.enable = true;
+    gaming = {
+      enable = true;
+      factorio.enable = false;
+    };
     browser.enable = true;
     socialize.enable = true;
     editing.enable = true;

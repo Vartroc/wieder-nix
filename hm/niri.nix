@@ -40,7 +40,7 @@ in
 
         cursor = {
           hide-after-inactive-ms = 1000;
-          hide-when-typing = true;
+          hide-when-typing = false;
           #size = 12;
         };
 

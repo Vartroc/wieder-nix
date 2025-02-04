@@ -9,11 +9,11 @@
   options.custom = {
     autostart = {
       enable = lib.mkEnableOption "greetd";
-      
+
       command = lib.mkOption {
-			type = lib.types.str;
-			default = "${config.programs.niri.package}";
-		};
+        type = lib.types.str;
+        default = "${config.programs.niri.package}";
+      };
     };
   };
 

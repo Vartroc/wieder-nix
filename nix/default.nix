@@ -9,6 +9,7 @@
     ./networking.nix
     ./misc.nix
     ./gaming.nix
+    ./factorio.nix
     ./zfs.nix
     ./boot.nix
     ./niri.nix

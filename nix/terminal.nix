@@ -21,7 +21,17 @@
         pkgs.bat
         pkgs.fzf
         pkgs.nixfmt-rfc-style
+	pkgs.fastfetch
       ];
+    };
+    programs.fish = {
+      enable = true;
+      shellInit = "fastfetch";
+      shellAliases = {
+	n = "nvim";
+	rb = "nh os switch";
+
+      };
     };
   };
 }

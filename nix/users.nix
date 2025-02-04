@@ -1,4 +1,4 @@
-{ lib, config, ... }:
+{ pkgs, lib, config, ... }:
 {
   options = {
     custom.andi.enable = lib.mkEnableOption "the andi user";
@@ -11,6 +11,7 @@
         "input"
       ]; # Enable ‘sudo’ for the user.
       initialPassword = "password";
+      shell = pkgs.fish;
     };
   };
 }

@@ -21,6 +21,7 @@
         placement_strategy = "top-left";
         hide_window_decorations = true;
       };
+      shellIntegration.enableFishIntegration = true;
     };
   };
 }

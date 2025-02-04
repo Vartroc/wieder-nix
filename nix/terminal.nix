@@ -2,7 +2,6 @@
   config,
   pkgs,
   lib,
-  inputs,
   ...
 }:
 {
@@ -24,14 +23,6 @@
 	pkgs.fastfetch
       ];
     };
-    programs.fish = {
-      enable = true;
-      shellInit = "fastfetch";
-      shellAliases = {
-	n = "nvim";
-	rb = "nh os switch";
-
-      };
-    };
+    programs.fish.enable = true;
   };
 }

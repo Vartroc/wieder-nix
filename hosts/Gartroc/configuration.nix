@@ -8,11 +8,7 @@
   custom = {
     # --- Essentials ---
     essentials = {
-      misc.enable = true;
       zfs.enable = true;
-      sound.enable = true;
-      localization.enable = true;
-      andi.enable = true;
     };
 
     # --- Userspace ---
@@ -27,7 +23,7 @@
       gaming = {
 	enable = true;
       };
-      projects.enable = true;
+      direnv.enable = true;
       browser.enable = true;
       anki.enable = true;
       socialize.enable = true;

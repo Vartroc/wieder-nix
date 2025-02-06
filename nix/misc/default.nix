@@ -1,0 +1,5 @@
+{
+  imports = [
+    ./no-shutdown.nix
+  ];
+}

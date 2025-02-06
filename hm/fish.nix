@@ -7,12 +7,12 @@
       enable = true;
       interactiveShellInit = "set fish_greeting";
       shellInit = ''
-set -l nix_shell_info (
-  if test -n "$IN_NIX_SHELL"
-    echo -n "<nix-shell>"
-  end
-)
-echo -n -s "$nix_shell_info ~>"
+        set -l nix_shell_info (
+          if test -n "$IN_NIX_SHELL"
+            echo -n "<nix-shell>"
+          end
+        )
+        echo -n -s "$nix_shell_info ~>"
 
 
       '';

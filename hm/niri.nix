@@ -97,7 +97,7 @@ in
             draw-border-with-background = false;
 
           }
-	  {
+          {
             matches = [ { app-id = "vesktop"; } ];
             opacity = 0.95;
             draw-border-with-background = false;

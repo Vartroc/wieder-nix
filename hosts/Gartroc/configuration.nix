@@ -15,13 +15,13 @@
     userspace = {
       niri.enable = true;
       autostart = {
-	enable = true;
-	command = "${config.programs.niri.package}";
+        enable = true;
+        command = "${config.programs.niri.package}";
       };
       stylix.enable = true;
       plymouth.enable = false;
       gaming = {
-	enable = true;
+        enable = true;
       };
       direnv.enable = true;
       browser.enable = true;

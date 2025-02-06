@@ -23,38 +23,19 @@ Hello, I'm quite surprised you made it here. Well, this repo is just for my pers
 
 ## File Structure:
 ```tree
-.
-├── flake.lock
-├── flake.nix  
-│   --- The main entry point for the Nix flake configuration. Flakes make configurations cleaner and reusable!
-├── hm  
-│   --- Home-Manager-specific configurations, distinct from NixOS system-level files.
-│   ├── default.nix --- Imports all files in the `hm` directory.
-│   │   ...
-── nix  
-│   --- Contains system-wide NixOS configurations, not related to Home-Manager:
-│   ├── default.nix                 --- Imports all files in this directory.  
-│   ├── nixvim                      --- Nixvim configuration. Planning to switch to kickstart.nixvim for a cleaner setup.  
-│   │   └── ... 
-│   └──...
-├── assets                          --- Directory containing non .nix files
-│   ├── images                      --- Images (e.g. .png, .jpeg, .pdf)
-│   │   ├── ...
-│   │   └── wallpapers              --- Collection of my wallpapers
-│   │       └── ...
-│   └── text                        --- Textfiles lol
-│       ├── scripts                 --- universal scripts using writeShellApplication
-│       │   ├── default.nix
-│       │   ├── test1.nix
-│       │   └── test.nix
-│       └── text-emojis.txt         --- Emoji file for a "custom" emoji picker
-── hosts  
-│   --- Host-specific configurations, each containing:  
-│   ├── configuration.nix           --- NixOS system configuration.
-│   ├── hardware-configuration.nix  --- Auto-generated hardware settings for the host.
-│   └── home.nix                    --- Home-Manager configuration specific to the host.  
-│
-└── README.md   --- You're looking at it!  
+├── assets  - assets like pictures, scripts, etc
+│ 
+│── flake.lock
+├── flake.nix   - entrypoint
+├── hm  - home-manager modules
+├── hosts   - host specific config
+├── nix     - nixos specific modules
+│   ├── essentials  - essential modules
+│   ├── misc    - miscallanious modules, that don't have a specific theme
+│   ├── nixvim  - nixvim modules
+│   ├── services    - specific services
+│   └── userspace   - modules that are user-specific
+└── readme.md   --- You're looking at it!  
 
 ```
 

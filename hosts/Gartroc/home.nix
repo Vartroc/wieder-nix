@@ -15,6 +15,7 @@
     kitty.enable = true;
     fish.enable = true;
     wallpaper.enable = true;
+    vesktop.enable = true;
   };
 
   imports = [ ../../hm/default.nix ];

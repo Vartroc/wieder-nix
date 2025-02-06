@@ -89,18 +89,22 @@ in
         screenshot-path = "~/pictures/scrennshots/%Y-%m-%dT%H:%M:%S.png";
         prefer-no-csd = true;
 
-	
-	# --- window-rules ---
-	window-rules = [
-	  {
-	    matches = [{app-id = "kitty";}];
-	    opacity = 0.95;
-	    draw-border-with-background = false;
+        # --- window-rules ---
+        window-rules = [
+          {
+            matches = [ { app-id = "kitty"; } ];
+            opacity = 0.95;
+            draw-border-with-background = false;
 
-	  }
-	];
-	   
-	
+          }
+	  {
+            matches = [ { app-id = "vesktop"; } ];
+            opacity = 0.95;
+            draw-border-with-background = false;
+
+          }
+
+        ];
 
         binds =
           with config.lib.niri.actions;

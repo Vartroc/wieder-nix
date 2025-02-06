@@ -1,6 +1,7 @@
 {
   imports = [
     ./zathura.nix
+    ./vesktop.nix
     ./niri.nix
     ./hyprpaper.nix
     ./gaming.nix

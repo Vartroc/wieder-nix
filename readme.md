@@ -67,3 +67,7 @@ Hello, I'm quite surprised you made it here. Well, this repo is just for my pers
         - kitty
     - notification deamon with e.g. time shortcut
     - disko config
+
+
+### Credit:
+[refact0r/system24](https://github.com/refact0r/system24/tree/main) - Vesktop Theme

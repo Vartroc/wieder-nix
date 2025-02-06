@@ -7,32 +7,45 @@
   ];
   custom = {
     # --- Essentials ---
-    misc.enable = true;
-    zfs.enable = true;
-    sound.enable = true;
-    localization.enable = true;
-    andi.enable = true;
+    essentials = {
+      misc.enable = true;
+      zfs.enable = true;
+      sound.enable = true;
+      localization.enable = true;
+      andi.enable = true;
+    };
 
     # --- Userspace ---
-    niri.enable = true;
-    autostart = {
-      enable = true;
-      command = "${config.programs.niri.package}";
+    userspace = {
+      niri.enable = true;
+      autostart = {
+	enable = true;
+	command = "${config.programs.niri.package}";
+      };
+      stylix.enable = true;
+      plymouth.enable = false;
+      gaming = {
+	enable = true;
+      };
+      projects.enable = true;
+      browser.enable = true;
+      anki.enable = true;
+      socialize.enable = true;
+      editing.enable = true;
+      terminal.enable = true;
     };
-    stylix.enable = true;
-    plymouth.enable = false;
-    gaming = {
-      enable = true;
-      factorio.enable = false;
-    };
-    browser.enable = true;
-    socialize.enable = true;
-    editing.enable = true;
-    terminal.enable = true;
 
     # --- Misc ---
-    scripts.enable = true;
-    no-shutdown.enable = true;
+    misc = {
+      scripts.enable = true;
+      no-shutdown.enable = true;
+    };
+
+    # --- Services ---
+    services = {
+      factorio.enable = false;
+    };
+
   };
 
   # --- Home-manager ---

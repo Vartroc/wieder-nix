@@ -1,25 +1,9 @@
 {
   imports = [
-    ./stylix.nix
-    ./editing.nix
-    ./greetd.nix
-    ./plymouth.nix
-    ./browser.nix
-    ./printing.nix
-    ./networking.nix
-    ./misc.nix
-    ./gaming.nix
-    ./factorio.nix
-    ./zfs.nix
-    ./boot.nix
-    ./niri.nix
-    ./sound.nix
-    ./users.nix
-    ./terminal.nix
-    ./socialize.nix
-    ./no-shutdown.nix
-    ./localization.nix
     ./nixvim/nixvim.nix
-    #./treefmt.nix
+    ./userspace/default.nix
+    ./misc/default.nix
+    ./essentials/default.nix
+    ./services/default.nix
   ];
 }

@@ -26,23 +26,22 @@ Hello, I'm quite surprised you made it here. Well, this repo is just for my pers
 ├── assets  - assets like pictures, scripts, etc
 │ 
 │── flake.lock
-├── flake.nix   - entrypoint
-├── hm  - home-manager modules
-├── hosts   - host specific config
-├── nix     - nixos specific modules
+├── flake.nix       - entrypoint
+├── hm              - home-manager modules
+├── hosts           - host specific config
+├── nix             - nixos specific modules
 │   ├── essentials  - essential modules
-│   ├── misc    - miscallanious modules, that don't have a specific theme
-│   ├── nixvim  - nixvim modules
+│   ├── misc        - miscallanious modules, that don't have a specific theme
+│   ├── nixvim      - nixvim modules
 │   ├── services    - specific services
 │   └── userspace   - modules that are user-specific
-└── readme.md   --- You're looking at it!  
+└── readme.md       - You're looking at it!  
 
 ```
 
 
 
 ### Issue Tracker:
-    - cross dependencies between /nix/niri.nix and /hm/niri.nix
     - config required for:
         - fuzzel
         - kitty

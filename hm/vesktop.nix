@@ -32,10 +32,10 @@
         	--panel-roundness: 0px; /* corner roundness of panels. ONLY WORKS IF unrounding.css IS REMOVED (see above). */
 
         	/* background colors */
-        	--bg-0: #24273a; /* main background color. */
-        	--bg-1: #1e2030; /* background color for secondary elements like code blocks, embeds, etc. */
-        	--bg-2: #363a4f; /* color of neutral buttons. */
-        	--bg-3: #494d64; /* color of neutral buttons when hovered. */
+        	--bg-0: rgba(36, 39, 58, 0.95); /* main background color. */
+        	--bg-1: rgba(30, 32, 48, 0.95); /* background color for secondary elements like code blocks, embeds, etc. */
+        	--bg-2: rgba(54, 58, 79, 0.95); /* color of neutral buttons. */
+        	--bg-3: rgba(73, 77, 100, 0.95); /* color of neutral buttons when hovered. */
 
         	/* state modifiers */
         	--hover: color-mix(in oklch, var(--txt-3), transparent 80%); /* color of hovered elements. */

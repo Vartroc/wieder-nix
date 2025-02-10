@@ -39,7 +39,7 @@ in
         };
 
         cursor = {
-          hide-after-inactive-ms = 1000;
+          hide-after-inactive-ms = 10000000;
           hide-when-typing = false;
           #size = 12;
         };
@@ -93,17 +93,16 @@ in
         window-rules = [
           {
             matches = [ { app-id = "kitty"; } ];
-            opacity = 0.95;
+            opacity = 1.0;
             draw-border-with-background = false;
 
           }
           {
             matches = [ { app-id = "vesktop"; } ];
-            opacity = 0.95;
+            opacity = 1.0;
             draw-border-with-background = false;
 
           }
-
         ];
 
         binds =

@@ -15,6 +15,7 @@
     niri.url = "github:sodiboo/niri-flake";
     ghostty.url = "github:ghostty-org/ghostty";
     stylix.url = "github:danth/stylix";
+    nimmer.url = "github:vartroc/nimmer";
   };
 
   outputs =

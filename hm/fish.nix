@@ -19,7 +19,9 @@
       shellAliases = {
         n = "nvim";
         rb = "nh os switch";
-
+	ls = "eza --icons=auto --width=100 --group-directories-first";
+	sl = "eza --icons=auto --width=100 --group-directories-first";
+	l = "eza --icons=auto --width=100 --group-directories-first";
       };
     };
   };

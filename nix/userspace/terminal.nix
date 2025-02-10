@@ -2,6 +2,7 @@
   config,
   pkgs,
   lib,
+  inputs,
   ...
 }:
 let
@@ -16,6 +17,7 @@ in
       };
       systemPackages = [
         pkgs.wev
+        pkgs.unzip
         pkgs.nh
         pkgs.ripgrep
         pkgs.tree
@@ -23,6 +25,8 @@ in
         pkgs.fzf
         pkgs.nixfmt-rfc-style
         pkgs.fastfetch
+        pkgs.eza
+        inputs.nimmer.packages."x86_64-linux".default
       ];
     };
     programs.fish.enable = true;

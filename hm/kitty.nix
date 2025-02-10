@@ -12,7 +12,6 @@
     programs.kitty = {
       enable = true;
       package = pkgs.kitty;
-      themeFile = "Catppuccin-Mocha";
       settings = {
         window_border_width = "0px";
         tab_bar_edge = "top";
@@ -20,6 +19,8 @@
         tab_bar_style = "fade";
         placement_strategy = "top-left";
         hide_window_decorations = true;
+        background_opacity = lib.mkForce 0.95;
+        font_size = lib.mkForce 15;
       };
       shellIntegration.enableFishIntegration = true;
     };

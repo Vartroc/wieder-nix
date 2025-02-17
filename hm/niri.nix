@@ -97,12 +97,12 @@ in
             draw-border-with-background = false;
 
           }
-          {
-            matches = [ { app-id = "vesktop"; } ];
-            opacity = 1.0;
-            draw-border-with-background = false;
-
-          }
+          # {
+          #   matches = [ { app-id = "vesktop"; } ];
+          #   opacity = 1.0;
+          #   draw-border-with-background = false;
+          #
+          # }
         ];
 
         binds =
@@ -151,6 +151,7 @@ in
               sh ''cat ${config.home.homeDirectory}/wieder-nix/assets/text/text-emojis.txt | fuzzel --dmenu | column -t -s "⇒" -N "EMOJI","DESCRIPTION" -H "DESCRIPTION" | tail +2 | wl-copy -n'';
             "${Mod}+${Mod1}+D".action = sh "systemctl poweroff";
             "${Mod}+${Mod1}+${Mod2}+D".action = sh "systemctl reboot";
+            "${Mod}+${Mod1}+U".action = sh "signal-desktop & vesktop";
 
             # --- debugging ---
             "${Mod}+Shift+J".action = quit;

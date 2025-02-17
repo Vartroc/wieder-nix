@@ -13,7 +13,7 @@ in
   config = lib.mkIf cfg.enable {
     programs.niri = {
       enable = true;
-      package = pkgs.niri-stable;
+      package = pkgs.niri-unstable;
     };
     programs.xwayland.enable = true;
     security.polkit.enable = true;

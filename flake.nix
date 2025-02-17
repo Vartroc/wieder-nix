@@ -13,7 +13,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     niri.url = "github:sodiboo/niri-flake";
-    ghostty.url = "github:ghostty-org/ghostty";
+    # ghostty.url = "github:ghostty-org/ghostty";
     stylix.url = "github:danth/stylix";
     nimmer.url = "github:vartroc/nimmer";
   };
@@ -37,7 +37,6 @@
           }
           inputs.nixvim.nixosModules.nixvim
           inputs.niri.nixosModules.niri
-          #	  inputs.niri.homeModules.niri
           inputs.stylix.nixosModules.stylix
         ];
       };

@@ -1,6 +1,7 @@
 {
   lib,
   config,
+  pkgs,
   ...
 }:
 let
@@ -10,5 +11,8 @@ in
   options.custom.userspace.browser.enable = lib.mkEnableOption "browser";
   config = lib.mkIf cfg.enable {
     programs.firefox.enable = true;
+    environment.systemPackages = [
+      pkgs.librewolf
+    ];
   };
 }

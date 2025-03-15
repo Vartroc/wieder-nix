@@ -25,9 +25,16 @@
       systems,
       ...
     }@inputs:
+    let
+      system = "x86_64-linux";
+      pkgs-stable = inputs.nixpkgs-stable.legacyPackages.${system};
+    in
     {
       nixosConfigurations.Gartroc = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs; };
+        specialArgs = {
+          inherit inputs;
+          inherit pkgs-stable;
+        };
         modules = [
           ./hosts/Gartroc/configuration.nix
           inputs.home-manager.nixosModules.default

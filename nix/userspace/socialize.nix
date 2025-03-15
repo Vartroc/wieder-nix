@@ -10,9 +10,13 @@ in
 {
   options.custom.userspace.socialize.enable = lib.mkEnableOption "socialize";
   config = lib.mkIf cfg.enable {
-    environment.systemPackages = with pkgs; [
-      signal-desktop
-      vesktop
+    environment.systemPackages = [
+      pkgs.signal-desktop
+      pkgs.dolphin
+      pkgs.vesktop
+
+      pkgs.spotify
+      pkgs.spicetify-cli
     ];
   };
 }

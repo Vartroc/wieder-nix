@@ -26,7 +26,10 @@ in
         pkgs.nixfmt-rfc-style
         pkgs.fastfetch
         pkgs.eza
+        pkgs.yt-dlp
         inputs.nimmer.packages."x86_64-linux".default
+
+        pkgs.pavucontrol
       ];
     };
     programs.fish.enable = true;

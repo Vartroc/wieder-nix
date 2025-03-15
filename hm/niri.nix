@@ -18,7 +18,7 @@ in
 
         input = {
           warp-mouse-to-focus = true;
-          #input.keyboard.xkb.layout = "de";
+          # keyboard.xkb.layout = "de";
           keyboard.xkb.layout = "de(bone)";
           power-key-handling.enable = false;
 

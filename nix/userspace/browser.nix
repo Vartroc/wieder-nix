@@ -12,7 +12,7 @@ in
   config = lib.mkIf cfg.enable {
     programs.firefox.enable = true;
     environment.systemPackages = [
-      pkgs.librewolf
+      pkgs.floorp
     ];
   };
 }

@@ -13,7 +13,8 @@ in
     environment.systemPackages = [
       pkgs.gimp
       pkgs.obs-studio
-      pkgs.openscad
+      pkgs.openscad-unstable
+      pkgs.orca-slicer
     ];
   };
 }

@@ -114,7 +114,7 @@ in
             # --- Actions to do on the upper left home-row ---
             "${Mod}+H".action.spawn = "${config.programs.fuzzel.package}/bin/fuzzel";
             "${Mod}+L".action.spawn = "${config.programs.kitty.package}/bin/kitty";
-            "${Mod}+M".action.spawn = "librewolf";
+            "${Mod}+M".action.spawn = "floorp";
             "${Mod}+W".action = screenshot-window;
             "${Mod}+${Mod1}+W".action = screenshot-screen;
             "${Mod}+${Mod2}+W".action = screenshot;

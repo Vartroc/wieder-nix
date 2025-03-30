@@ -14,7 +14,7 @@ in
       enable = true;
 
       base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-macchiato.yaml";
-      image = ../../assets/images/wallpapers/solo-leveling-igris-edited.png;
+      image = ../../assets/images/wallpapers/a-rank-party.png;
       polarity = "dark";
 
       cursor = {

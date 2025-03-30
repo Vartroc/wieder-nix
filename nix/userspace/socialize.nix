@@ -12,7 +12,7 @@ in
   config = lib.mkIf cfg.enable {
     environment.systemPackages = [
       pkgs.signal-desktop
-      pkgs.dolphin
+      # pkgs.dolphin
       pkgs.vesktop
 
       pkgs.spotify

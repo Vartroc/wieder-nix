@@ -16,6 +16,10 @@
     # ghostty.url = "github:ghostty-org/ghostty";
     stylix.url = "github:danth/stylix";
     nimmer.url = "github:vartroc/nimmer";
+    zen-browser.url = "github:0xc000022070/zen-browser-flake";
+
+    nix-minecraft.url = "github:Infinidoge/nix-minecraft";
+
   };
 
   outputs =
@@ -45,6 +49,7 @@
           inputs.nixvim.nixosModules.nixvim
           inputs.niri.nixosModules.niri
           inputs.stylix.nixosModules.stylix
+
         ];
       };
     };

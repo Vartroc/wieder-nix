@@ -16,6 +16,8 @@ in
         environment.DISPLAY = ":0";
         spawn-at-startup = [ { command = [ "xwayland-satellite" ]; } ];
 
+        screenshot-path = "~/Screenshots/Screenshot-from--%Y-%m-%d--%H-%M-%S.png";
+
         input = {
           warp-mouse-to-focus = true;
           # keyboard.xkb.layout = "de";
@@ -70,14 +72,14 @@ in
           center-focused-column = "on-overflow";
           default-column-width.proportion = 0.5;
 
-          preset-window-heights = [
-            { proportion = 1.0 / 3.0; }
-            { proportion = 1.0 / 2.0; }
-            {
-              proportion = 2.0 / 3.0;
-            }
-            # { fixed = 1080; }
-          ];
+          # preset-window-heights = [
+          #   { proportion = 1.0 / 3.0; }
+          #   { proportion = 1.0 / 2.0; }
+          #   {
+          #     proportion = 2.0 / 3.0;
+          #   }
+          #   # { fixed = 1080; }
+          # ];
         };
 
         # --- animations lol ---
@@ -86,7 +88,7 @@ in
           slowdown = 0.75;
         };
 
-        screenshot-path = "~/pictures/scrennshots/%Y-%m-%dT%H:%M:%S.png";
+        # screenshot-path = "~/pictures/scrennshots/%Y-%m-%dT%H:%M:%S.png";
         prefer-no-csd = true;
 
         # --- window-rules ---
@@ -114,9 +116,9 @@ in
             # --- Actions to do on the upper left home-row ---
             "${Mod}+H".action.spawn = "${config.programs.fuzzel.package}/bin/fuzzel";
             "${Mod}+L".action.spawn = "${config.programs.kitty.package}/bin/kitty";
-            "${Mod}+M".action.spawn = "floorp";
+            "${Mod}+M".action.spawn = "zen";
             "${Mod}+W".action = screenshot-window;
-            "${Mod}+${Mod1}+W".action = screenshot-screen;
+            # "${Mod}+${Mod1}+W".action = screenshot-screen;
             "${Mod}+${Mod2}+W".action = screenshot;
 
             # --- Window Management ---
@@ -131,11 +133,11 @@ in
             "${Mod}+Z".action = set-column-width "33%";
             "${Mod}+Comma".action = set-column-width "50%";
             "${Mod}+Period".action = set-column-width "67%";
-            "${Mod}+${Mod1}+Z".action = set-column-width "+10%";
-            "${Mod}+${Mod1}+Comma".action = set-column-width "-10%";
-            "${Mod}+${Mod1}+Period".action = switch-preset-window-height;
+            "${Mod}+${Mod1}+Z".action = set-column-width "-10%";
+            "${Mod}+${Mod1}+Comma".action = set-column-width "+10%";
 
             "${Mod}+Y".action = fullscreen-window;
+            "${Mod}+${Mod1}+Y".action = set-column-width "100%";
             "${Mod}+K".action = close-window;
             "${Mod}+C".action = close-window;
             ## --- location ---

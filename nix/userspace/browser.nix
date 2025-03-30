@@ -2,6 +2,7 @@
   lib,
   config,
   pkgs,
+  inputs,
   ...
 }:
 let
@@ -13,6 +14,7 @@ in
     programs.firefox.enable = true;
     environment.systemPackages = [
       pkgs.floorp
+      inputs.zen-browser.packages.x86_64-linux.default
     ];
   };
 }

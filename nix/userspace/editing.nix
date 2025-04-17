@@ -15,6 +15,7 @@ in
       pkgs.obs-studio
       pkgs.openscad-unstable
       pkgs.orca-slicer
+      pkgs.kdePackages.dolphin
     ];
   };
 }

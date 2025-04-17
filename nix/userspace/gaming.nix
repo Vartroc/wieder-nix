@@ -22,6 +22,8 @@ in
       osu-lazer-bin
       protonup
       r2modman
+      ryujinx
+      tor-browser
 
       ddnet
       mindustry

@@ -25,6 +25,7 @@ in
       wl-clipboard
       alsa-utils
       xdg-desktop-portal-gtk
+      nautilus
     ];
 
   };

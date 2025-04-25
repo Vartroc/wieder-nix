@@ -18,6 +18,7 @@ in
 
     environment.systemPackages = with pkgs; [
       lutris
+      heroic
       prismlauncher
       osu-lazer-bin
       protonup

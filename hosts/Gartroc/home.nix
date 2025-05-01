@@ -16,6 +16,7 @@
     fish.enable = true;
     wallpaper.enable = true;
     vesktop.enable = true;
+    notification.enable = true;
   };
 
   imports = [ ../../hm/default.nix ];

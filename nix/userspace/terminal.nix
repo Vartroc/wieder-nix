@@ -18,6 +18,9 @@ in
       systemPackages = [
         pkgs.wev
         pkgs.unzip
+        pkgs.zip
+        pkgs.curl
+        pkgs.gotop
         pkgs.nh
         pkgs.ripgrep
         pkgs.tree

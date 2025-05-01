@@ -115,6 +115,7 @@ in
           {
             # --- Actions to do on the upper left home-row ---
             "${Mod}+H".action.spawn = "${config.programs.fuzzel.package}/bin/fuzzel";
+            "${Mod}+${Mod1}+H".action.spawn = "notify-time";
             "${Mod}+L".action.spawn = "${config.programs.kitty.package}/bin/kitty";
             "${Mod}+M".action.spawn = "zen";
             "${Mod}+W".action = screenshot-window;
@@ -154,6 +155,8 @@ in
             "${Mod}+${Mod1}+D".action = sh "systemctl poweroff";
             "${Mod}+${Mod1}+${Mod2}+D".action = sh "systemctl reboot";
             "${Mod}+U".action = sh "signal-desktop & vesktop & spotify";
+
+            "${Mod}+Q".action = sh "swaync-client -t -sw";
 
             # --- debugging ---
             "${Mod}+Shift+J".action = quit;

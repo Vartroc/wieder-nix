@@ -13,7 +13,8 @@ in
     environment.systemPackages = [
 
       (import ./test.nix { inherit pkgs; })
-      (import ./test1.nix { inherit pkgs; })
+      # (import ./test1.nix { inherit pkgs; })
+      (import ./time.nix { inherit pkgs; })
 
     ];
 

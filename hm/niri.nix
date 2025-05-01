@@ -153,7 +153,7 @@ in
               sh ''cat ${config.home.homeDirectory}/wieder-nix/assets/text/text-emojis.txt | fuzzel --dmenu | column -t -s "⇒" -N "EMOJI","DESCRIPTION" -H "DESCRIPTION" | tail +2 | wl-copy -n'';
             "${Mod}+${Mod1}+D".action = sh "systemctl poweroff";
             "${Mod}+${Mod1}+${Mod2}+D".action = sh "systemctl reboot";
-            "${Mod}+${Mod1}+U".action = sh "signal-desktop & vesktop";
+            "${Mod}+U".action = sh "signal-desktop & vesktop & spotify";
 
             # --- debugging ---
             "${Mod}+Shift+J".action = quit;

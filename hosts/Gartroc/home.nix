@@ -7,7 +7,7 @@
   home.homeDirectory = "/home/andi";
 
   custom = {
-    # image.enable = true;
+    image.enable = true;
     git.enable = true;
     # yazi.enable = true;
     fuzzel.enable = true;

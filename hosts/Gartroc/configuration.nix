@@ -35,6 +35,10 @@
     misc = {
       scripts.enable = true;
       no-shutdown.enable = true;
+      networking = {
+        enable = true; # use systemd networking instead of dhcpd
+        interfaceName = "enp13s0";
+      };
     };
 
     # --- Services ---
@@ -55,6 +59,8 @@
   # --- Host-specific networking ---
   networking = {
     hostName = "Gartroc";
+    networkmanager.enable = false;
+    firewall.enable = false;
   };
 
 }

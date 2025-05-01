@@ -16,6 +16,7 @@ in
       pkgs.openscad-unstable
       pkgs.orca-slicer
       pkgs.kdePackages.dolphin
+      pkgs.gparted
     ];
   };
 }
